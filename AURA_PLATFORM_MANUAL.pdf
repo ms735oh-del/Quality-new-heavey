@@ -1,0 +1,815 @@
+%PDF-1.3
+%�߬�
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 2472
+>>
+stream
+0.5670000000000001 w
+0 G
+0.31 0.27 0.9 rg
+0. 841.8899999999999864 595.2755905511811534 -226.7716535433071101 re
+f
+BT
+/F2 28 Tf
+32.1999999999999957 TL
+1. g
+42.5196850393700814 742.6774015748030706 Td
+(AURA QUALITY SAAS PLATFORM) Tj
+ET
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0.78 0.824 0.996 rg
+42.5196850393700814 705.8270078740157487 Td
+(Complete Institutional Academic Quality & Compliance Management Manual) Tj
+ET
+0.97 0.98 0.99 rg
+53.8582677165354369 572.5986614173227736 m
+541.4173228346456881 572.5986614173227736 l
+547.6794491319398048 572.5986614173227736 552.7559055118110791 567.5222050374513856 552.7559055118110791 561.2600787401573825 c
+552.7559055118110791 342.9923622047243157 l
+552.7559055118110791 336.7302359074302558 546.4937792145169624 331.6537795275589815 541.4173228346456881 331.6537795275589815 c
+53.8582677165354369 331.6537795275589815 l
+47.5961414192414054 331.6537795275589815 42.5196850393700814 337.9159058248530414 42.5196850393700814 342.9923622047243157 c
+42.5196850393700814 561.2600787401573825 l
+42.5196850393700814 567.5222050374513856 48.7818113366641199 572.5986614173227736 53.8582677165354369 572.5986614173227736 c
+h
+f
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.118 0.161 0.231 rg
+70.8661417322834666 530.0789763779526993 Td
+(Manual Overview & Metadata) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0.2 0.255 0.333 rg
+70.8661417322834666 501.7325196850393354 Td
+(� Platform Name: AURA Institutional Quality Management SaaS) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0.2 0.255 0.333 rg
+70.8661417322834666 473.3860629921259147 Td
+(� Target Roles: Quality Managers, Deans, Lecturers, and Students) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0.2 0.255 0.333 rg
+70.8661417322834666 445.0396062992125508 Td
+(� Supported Workflows: Automated Surveys, Risk Logs, KPIs & AI Insight Auditing) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0.2 0.255 0.333 rg
+70.8661417322834666 416.69314960629913 Td
+(� Integration Stack: Google Workspace, Google GenAI \(Gemini SDK\), Firestore & Auth) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0.2 0.255 0.333 rg
+70.8661417322834666 388.3466929133857661 Td
+(� Document Purpose: Complete user guide & environment setup instructions) Tj
+ET
+BT
+/F3 10 Tf
+11.5 TL
+0.392 0.455 0.545 rg
+42.5196850393700814 76.5356692913385359 Td
+(System generated technical manual � Confidentially isolated for authorized tenants.) Tj
+ET
+BT
+/F3 10 Tf
+11.5 TL
+0.392 0.455 0.545 rg
+510.2362204724410049 76.5356692913385359 Td
+(Page 1 of 4) Tj
+ET
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 4605
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 785.1970866141732586 Td
+(1. SYSTEM ARCHITECTURE & ISOLATION) Tj
+ET
+0.89 0.91 0.94 RG
+1.4173228346456694 w
+42.5196850393700814 776.69314960629913 m
+552.7559055118110791 776.69314960629913 l
+S
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 742.6774015748030706 Td
+(AURA operates as a highly secure, tenant-isolated multi-institution platform designed to satisfy regional) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 722.8348818897637784 Td
+(educational accreditation bodies. Every university is provisioned a logically isolated database space) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 702.9923622047243725 Td
+(ensuring full structural security and information hygiene.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 663.3073228346456744 Td
+(Core Functional Units Available on AURA:) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 643.4648031496062686 Td
+(  1. Dashboard & Core Analytics: Dynamic visual trackers monitoring performance logs and active surveys.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 623.6222834645668627 Td
+(  2. Academics & Department Directory: Manage and search courses, lecturers, and college divisions.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 603.7797637795274568 Td
+(  3. Quality Review & Self-Studies: Design, review, approve, and finalize comprehensive self-study logs.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 583.9372440944881646 Td
+(  4. Operations Risk Registry: Continuous audit log of administrative and academic risk events.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 564.0947244094487587 Td
+(  5. Site-Visit & Field Audits: External review tracker to align with national accreditation standards.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 544.2522047244094665 Td
+(  6. KPI Tracking Hub: Real-time data logging for critical quality indexes \(student-to-staff, retention, etc.\).) Tj
+ET
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 515.9057480314959321 Td
+(2. TEMPORARY EVALUATION CAMPAIGNS) Tj
+ET
+0.89 0.91 0.94 RG
+1.4173228346456694 w
+42.5196850393700814 507.4018110236219741 m
+552.7559055118110791 507.4018110236219741 l
+S
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 473.3860629921259147 Td
+(To resolve administrative overheads, AURA supports "Temporary Evaluation Campaigns" enabling) Tj
+ET
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 453.5435433070865656 Td
+(Quality Officers to generate custom questionnaires, assign them to courses, and obtain structured responses.) Tj
+ET
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 413.8585039370078107 Td
+(Workflow Steps:) Tj
+ET
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 394.0159842519684616 Td
+(  � Design Phase: Define target course, selected instructors, and add customizable metrics from the bank.) Tj
+ET
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 374.1734645669290558 Td
+(  � Approval Flow: Campaigns start as "Draft", transition to "Under Review", are finalized as "Approved",) Tj
+ET
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 354.3309448818897067 Td
+(    and then marked "Active" to receive student responses.) Tj
+ET
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 334.4884251968503008 Td
+(  � Dynamic Student Gateway: Students access evaluations via a 100% responsive interface utilizing the) Tj
+ET
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 314.6459055118109518 Td
+(    secure 8-digit access code \(e.g. EVAL-793X\) or dynamic dynamic links.) Tj
+ET
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 294.8033858267715459 Td
+(  � Adaptive QR Codes: Integrated QR codes dynamically update relative to current hosting origins,) Tj
+ET
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 274.9608661417322537 Td
+(    safeguarding developers against 404 broken routes.) Tj
+ET
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+510.2362204724410049 76.5356692913385359 Td
+(Page 2 of 4) Tj
+ET
+endstream
+endobj
+7 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 8 0 R
+>>
+endobj
+8 0 obj
+<<
+/Length 3477
+>>
+stream
+1.4173228346456694 w
+0.89 0.91 0.94 RG
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 785.1970866141732586 Td
+(3. ENVIRONMENT VARIABLES CONFIGURATION) Tj
+ET
+0.89 0.91 0.94 RG
+1.4173228346456694 w
+42.5196850393700814 776.69314960629913 m
+552.7559055118110791 776.69314960629913 l
+S
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 742.6774015748030706 Td
+(AURA utilizes secure, server-side environment variables to hide private credentials from the browser.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 721.4175590551180903 Td
+(These environment settings must be placed in the root directory under `.env` or injected) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 700.15771653543311 Td
+(via the AI Studio Secrets panel.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 657.6380314960629221 Td
+(Required Environment Keys Explained:) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 615.1183464566928478 Td
+(  1. GEMINI_API_KEY \(Server Secret\)) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 593.8585039370078675 Td
+(     - Function: Powers the smart AI Recommendation and Compliance Audits engine.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 572.5986614173227736 Td
+(     - Where to place: In the root `.env` or AI Studio Secrets.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 551.3388188976377933 Td
+(     - Format: GEMINI_API_KEY="AIzaSy..." \(Do NOT prefix with VITE_\).) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 508.8191338582676622 Td
+(  2. APP_URL \(SaaS Router Utility\)) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 487.559291338582625 Td
+(     - Function: Automatically routes dynamic QR codes and evaluation gateways to the current site origin.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 466.2994488188975879 Td
+(     - Format: APP_URL="https://your-platform-domain.run.app") Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 423.7797637795275136 Td
+(  3. Yemen Mobile Wallet Merchant Settings \(Financial SaaS Gateway\)) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 402.5199212598424765 Td
+(     - Function: Coordinates premium subscription payments via regional wallets.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 381.2600787401574394 Td
+(     - JAWALI_WALLET_NUMBER: Merchant phone number for Jawali \(e.g. 770001234\).) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 360.0002362204724022 Td
+(     - JAWALI_MERCHANT_ID: Unique Jawali integration token \(e.g. MERCH-JAW-9988\).) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 338.7403937007873083 Td
+(     - JEEB_WALLET_NUMBER: Merchant phone number for Jeeb \(e.g. 780005678\).) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 317.480551181102328 Td
+(     - JEEB_MERCHANT_ID: Unique Jeeb integration token \(e.g. MERCH-JEE-5544\).) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+510.2362204724410049 76.5356692913385359 Td
+(Page 3 of 4) Tj
+ET
+endstream
+endobj
+9 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 3466
+>>
+stream
+1.4173228346456694 w
+0.89 0.91 0.94 RG
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 785.1970866141732586 Td
+(4. STEP-BY-STEP PLATFORM USER GUIDE) Tj
+ET
+0.89 0.91 0.94 RG
+1.4173228346456694 w
+42.5196850393700814 776.69314960629913 m
+552.7559055118110791 776.69314960629913 l
+S
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 742.6774015748030706 Td
+(Follow this operational outline to maximize the potential of the AURA platform:) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 700.15771653543311 Td
+(Step 1: Accessing the Portal) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 678.8978740157480161 Td
+(  Open the main domain. Input authorized credentials \(default credentials can be used or customized via) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 657.6380314960629221 Td
+(  the user administration view\). Select your institutional workspace \(e.g., Oxford Global College\).) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 615.1183464566928478 Td
+(Step 2: Designing an Evaluation Form Campaign) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 593.8585039370078675 Td
+(  Navigate to the "Evaluation Forms & Campaigns" tab in the left sidebar. Fill in the campaign parameters) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 572.5986614173227736 Td
+(  \(target lecturers, rating scales like Likert/Stars, and lock mechanisms\). Set an active window schedule,) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 551.3388188976377933 Td
+(  and transition the status to "Active" to publish it.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 508.8191338582676622 Td
+(Step 3: Simulating and Receiving Student Submissions) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 487.559291338582625 Td
+(  Instructors can display the generated QR code or copy the Short Link on the projector. Students input the) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 466.2994488188975879 Td
+(  code in the Gateway sub-tab or load the link on their mobile devices to submit anonymous evaluations.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 423.7797637795275136 Td
+(Step 4: AI Audits & Compliance Reviews) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 402.5199212598424765 Td
+(  Visit the "AI Compliance Advisor" or "Quality Evaluations" section. The platform feeds raw, isolated) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 381.2600787401574394 Td
+(  metrics to the integrated Gemini model to automatically draft regional corrective actions, program self-studies,) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+42.5196850393700814 360.0002362204724022 Td
+(  and accreditation readiness scores without exporting sensitive student records.) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.31 0.275 0.898 rg
+42.5196850393700814 119.0553543307086102 Td
+(AURA Quality Management Suite � Enterprise SaaS Edition � 2026) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.31 0.275 0.898 rg
+510.2362204724410049 76.5356692913385359 Td
+(Page 4 of 4) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R 7 0 R 9 0 R ]
+/Count 4
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+19 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+20 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+21 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+22 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+23 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+24 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 11 0 R
+/F2 12 0 R
+/F3 13 0 R
+/F4 14 0 R
+/F5 15 0 R
+/F6 16 0 R
+/F7 17 0 R
+/F8 18 0 R
+/F9 19 0 R
+/F10 20 0 R
+/F11 21 0 R
+/F12 22 0 R
+/F13 23 0 R
+/F14 24 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+25 0 obj
+<<
+/Producer (jsPDF 4.2.1)
+/CreationDate (D:20260715121905-00'00')
+>>
+endobj
+26 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 27
+0000000000 65535 f 
+0000014793 00000 n 
+0000016633 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000002676 00000 n 
+0000002813 00000 n 
+0000007470 00000 n 
+0000007607 00000 n 
+0000011136 00000 n 
+0000011274 00000 n 
+0000014868 00000 n 
+0000014994 00000 n 
+0000015125 00000 n 
+0000015259 00000 n 
+0000015397 00000 n 
+0000015521 00000 n 
+0000015650 00000 n 
+0000015782 00000 n 
+0000015918 00000 n 
+0000016046 00000 n 
+0000016173 00000 n 
+0000016302 00000 n 
+0000016435 00000 n 
+0000016537 00000 n 
+0000016886 00000 n 
+0000016972 00000 n 
+trailer
+<<
+/Size 27
+/Root 26 0 R
+/Info 25 0 R
+/ID [ <072914B2C9A1F3F745177282C8527262> <072914B2C9A1F3F745177282C8527262> ]
+>>
+startxref
+17076
+%%EOF

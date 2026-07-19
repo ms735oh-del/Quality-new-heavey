@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل تشغيل منصة أورا لضمان جودة التعليم - AURA Manual</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        code, pre {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            body {
+                background-color: white !important;
+                color: black !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+
+    <!-- Print Banner / Header (Screen Only) -->
+    <div class="bg-indigo-600 text-white py-4 px-6 shadow-md flex items-center justify-between no-print">
+        <div class="flex items-center gap-3">
+            <span class="text-2xl">🎓</span>
+            <div>
+                <h1 class="font-bold text-lg leading-tight">منصة أورا لضمان جودة التعليم (AURA)</h1>
+                <p class="text-xs text-indigo-200">دليل المستخدم التقني والتشغيلي الشامل</p>
+            </div>
+        </div>
+        <button onclick="window.print()" class="bg-white text-indigo-600 hover:bg-indigo-50 font-bold text-xs px-4 py-2 rounded-lg transition shadow-sm cursor-pointer">
+            🖨️ طباعة الدليل كـ PDF
+        </button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="max-w-4xl mx-auto my-8 p-8 sm:p-12 bg-white rounded-2xl shadow-xl border border-slate-100 relative">
+        
+        <!-- Watermark / Decorative Top Badge -->
+        <div class="absolute top-6 left-6 text-[10px] text-slate-400 font-bold uppercase tracking-widest border border-slate-200 px-2 py-1 rounded font-mono">
+            Enterprise SaaS v1.4
+        </div>
+
+        <!-- Cover Header -->
+        <div class="text-center pb-8 border-b-2 border-slate-100 space-y-3">
+            <span class="text-5xl">🛡️</span>
+            <h2 class="text-3xl font-extrabold text-slate-900">دليل تشغيل منصة أورا (AURA)</h2>
+            <p class="text-indigo-600 font-bold text-sm tracking-wide">الدليل المؤسسي الشامل لتهيئة متغيرات البيئة واستخدام النظام</p>
+            <div class="flex items-center justify-center gap-2 text-xs text-slate-400 font-mono pt-2">
+                <span>تاريخ التحديث: يوليو 2026</span>
+                <span>•</span>
+                <span>نظام عزل البيانات المتعدد (Multi-Tenant Isolation)</span>
+            </div>
+        </div>
+
+        <!-- Section 1: Introduction -->
+        <section class="py-8 space-y-4">
+            <h3 class="text-xl font-bold text-slate-900 border-r-4 border-indigo-600 pr-3">1. مقدمة عن المنصة وبنية عزل البيانات</h3>
+            <p class="text-sm leading-relaxed text-slate-600">
+                منصة <strong>أورا لضمان جودة التعليم (AURA Quality Suite)</strong> هي نظام برمجيات كخدمة (SaaS) متكامل ومصمم خصيصاً لتلبية متطلبات هيئات الاعتماد والجودة الأكاديمية الإقليمية والدولية. تعمل المنصة بنظام <strong>عزل البيانات الكامل والآمن (Tenant Isolation)</strong> حيث يتم فصل بيانات كل جامعة أو معهد أكاديمي بشكل منطقي كامل في قاعدة البيانات السحابية (Cloud Firestore) لضمان السرية والخصوصية التامة ومطابقة معايير أمن المعلومات الأكاديمية.
+            </p>
+        </section>
+
+        <!-- Section 2: Core Components -->
+        <section class="py-8 space-y-4 page-break">
+            <h3 class="text-xl font-bold text-slate-900 border-r-4 border-indigo-600 pr-3">2. المحاور والتبويبات الرئيسية للمنصة</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                    <span class="text-lg">📊</span>
+                    <h4 class="font-bold text-slate-900 mt-2 mb-1">لوحة التحكم الرئيسية (Dashboard)</h4>
+                    <p class="text-slate-500 leading-relaxed">تعرض ملخصاً فورياً وإحصائيات بيانية حول استمارات التقييم الفعالة، والمهام الأكاديمية المنجزة، ومستوى الامتثال بالمعايير، مع توزيع رسومي لمؤشرات الأداء.</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                    <span class="text-lg">🔗</span>
+                    <h4 class="font-bold text-slate-900 mt-2 mb-1">إدارة استمارات والروابط المؤقتة (Campaigns)</h4>
+                    <p class="text-slate-500 leading-relaxed">تتيح لعمداء الكليات ومسؤولي الجودة تصميم استمارات تقييم مخصصة، وإتاحتها للطلاب بشكل مجهول الهوية بالكامل عبر روابط ورموز وصول سريعة (مثل <code class="bg-indigo-50 text-indigo-600 px-1 rounded">EVAL-793X</code>) أو رموز الاستجابة السريعة (QR Codes).</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                    <span class="text-lg">🤖</span>
+                    <h4 class="font-bold text-slate-900 mt-2 mb-1">مستشار الامتثال والتوصيات بالذكاء الاصطناعي</h4>
+                    <p class="text-slate-500 leading-relaxed">مدعوم بنظام <code class="bg-slate-100 text-slate-700 px-1 rounded">Gemini API</code> الذكي، حيث يحلل نتائج التقييمات الأكاديمية وصياغة مسودات لخطط التحسين الأكاديمي، والموائمة المنهجية، وتقييم الجاهزية للاعتماد تلقائياً بضغطة زر واحدة.</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                    <span class="text-lg">⚡</span>
+                    <h4 class="font-bold text-slate-900 mt-2 mb-1">إدارة المخاطر وتتبع مؤشرات الأداء (KPIs & Risk)</h4>
+                    <p class="text-slate-500 leading-relaxed">نظام مستمر لتسجيل وتدقيق المخاطر الأكاديمية والتشغيلية، وتتبع مؤشرات الأداء الحيوية (مثل نسبة عدد الطلاب للمدرسين، ومعدل إنجاز برامج التطوير) ومقارنتها بالحدود المستهدفة.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Environment Variables -->
+        <section class="py-8 space-y-4 page-break">
+            <h3 class="text-xl font-bold text-slate-900 border-r-4 border-indigo-600 pr-3">3. تهيئة متغيرات البيئة (Environment Variables)</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+                لكي تعمل كافة ميزات المنصة بالكامل وبأعلى مستويات الأمان (خاصة ميزات توليد التوصيات بالذكاء الاصطناعي وبوابة الدفع والروابط)، يجب إعداد وتعيين متغيرات البيئة التالية في ملف <code class="bg-slate-100 px-1.5 py-0.5 rounded font-mono text-xs">.env</code> في المجلد الرئيسي للمشروع، أو من خلال إعدادات <strong>Secrets Panel</strong> في منصة التطوير:
+            </p>
+
+            <div class="space-y-4 pt-2">
+                <div class="p-4 bg-slate-950 text-slate-200 rounded-xl font-mono text-xs space-y-2">
+                    <div class="text-emerald-400 font-bold"># .env.example - ملف متغيرات البيئة المطلوبة للمنصة</div>
+                    <div class="text-slate-500"># 1. مفتاح واجهة برمجة تطبيقات Gemini للذكاء الاصطناعي الأكاديمي وتوليد التقارير الذكية</div>
+                    <div>GEMINI_API_KEY="<span class="text-yellow-300">أدخل_مفتاح_الـ_Gemini_الخاص_بك_هنا</span>"</div>
+                    
+                    <div class="text-slate-500 mt-4"># 2. رابط المنصة الرئيسي (يستخدم لإعادة التوجيه التلقائي وتوليد الروابط ورموز الـ QR للطلاب)</div>
+                    <div>APP_URL="<span class="text-yellow-300">https://your-platform-domain.run.app</span>"</div>
+
+                    <div class="text-slate-500 mt-4"># 3. إعدادات محفظة جوالي للدفع وسداد اشتراكات الـ SaaS الرقمية التجارية</div>
+                    <div>JAWALI_WALLET_NUMBER="770001234"</div>
+                    <div>JAWALI_ACCOUNT_NAME="Aura Quality SaaS Hub (Jawali)"</div>
+                    <div>JAWALI_MERCHANT_ID="MERCH-JAW-9988"</div>
+
+                    <div class="text-slate-500 mt-4"># 4. إعدادات محفظة جيب للدفع وسداد الاشتراكات التجارية</div>
+                    <div>JEEB_WALLET_NUMBER="780005678"</div>
+                    <div>JEEB_ACCOUNT_NAME="Aura Quality SaaS Hub (Jeeb)"</div>
+                    <div>JEEB_MERCHANT_ID="MERCH-JEE-5544"</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Operational Guide -->
+        <section class="py-8 space-y-4 page-break">
+            <h3 class="text-xl font-bold text-slate-900 border-r-4 border-indigo-600 pr-3">4. خطوات استخدام المنصة بالتفصيل</h3>
+            <ol class="list-decimal list-inside space-y-3 text-sm text-slate-600 leading-relaxed pr-2">
+                <li>
+                    <strong>تسجيل الدخول وإدارة الصلاحيات:</strong> قم بالولوج للمنصة باستخدام بريدك الإلكتروني الأكاديمي. يمكنك التبديل بين الأدوار المختلفة (مدير جودة المؤسسة، عميد الكلية، المحاضر، أو الإدارة العليا) من شريط التحكم في أسفل القائمة الجانبية لتجربة جميع مستويات الصلاحيات.
+                </li>
+                <li>
+                    <strong>بناء حملة استمارة تقييم جديدة:</strong> انتقل إلى تبويب <em>"الروابط المؤقتة وحملات الاستمارات"</em>. حدد الفئة المستهدفة، والمقرر الدراسي، واختر مجموعة المحاضرين، ثم قم بتصميم الاستمارة بالكامل واختيار أوزان الأسئلة وتحديد تواريخ البدء والانتهاء وقواعد التحقق (حصر التقييم لجهاز واحد فقط، تفعيل الرمز السري للخصوصية وغيرها).
+                </li>
+                <li>
+                    <strong>نشر وتوزيع روابط التقييم الفورية للطلاب:</strong> عند حفظ الاستمارة وحركتها في سير العمل إلى الحالة "Active" (نشط)، سيعرض لك النظام رمز استجابة سريعة (QR Code) فريداً ورابطاً مخصصاً. هذه الروابط ومفاتيح الـ QR تم تحديثها برمجياً لترتبط <strong>ديناميكياً بمسار نطاق الاستضافة الفعلي الخاص بك</strong>، لتفادي أي خطأ 404 (الصفحة غير موجودة) بصرف النظر عن بيئة التطوير أو الإنتاج.
+                </li>
+                <li>
+                    <strong>مشاركة وتجربة بوابة التقييم الطلابي:</strong> يمكن للطلاب الدخول مباشرة عبر مسار الرابط المخصص أو عبر مسح رمز الـ QR، ليتم توجيههم فوراً إلى واجهة التقييم الخفيفة والآمنة لتسجيل إجاباتهم وتقييماتهم للأستاذ أو المقرر بخصوصية مطلقة.
+                </li>
+                <li>
+                    <strong>مراقبة التغيير الفوري والمستمر للسمات (Theme Mode Toggle):</strong> يمكنك تفعيل وضع السمة الفاتحة (Light mode - أيقونة الشمس)، أو السمة الداكنة (Dark mode - أيقونة الهلال)، أو وضع التوافق التلقائي مع نظام التشغيل (Auto Match - أيقونة اللابتوب) من التبويب المطور أسفل القائمة الجانبية، حيث يتغير مظهر المنصة فوراً وبشكل متوافق بالكامل في كافة العناصر المرجعية والواجهات.
+                </li>
+            </ol>
+        </section>
+
+        <!-- Signature Footer -->
+        <div class="mt-12 pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+            <span>حقوق الطبع محفوظة © منصة أورا الأكاديمية (AURA) 2026</span>
+            <span class="font-mono text-slate-300">CONFIDENTIAL | INTELLECTUAL PROPERTY OF AURA</span>
+        </div>
+
+    </div>
+
+    <!-- Instructions Banner Screen Only -->
+    <div class="max-w-4xl mx-auto my-4 p-4 bg-amber-50 rounded-xl border border-amber-200 text-amber-800 text-xs text-center leading-relaxed no-print">
+        💡 <strong>نصيحة للمدير المطور:</strong> يمكنك النقر فوق زر "طباعة الدليل كـ PDF" في الأعلى لحفظ نسخة ورقية مطبوعة أو ملف PDF فوري يحتوي على التنسيقات الدقيقة والهوامش وعلامات فواصل الصفحات المناسبة للتقديم للإدارة العليا.
+    </div>
+
+</body>
+</html>

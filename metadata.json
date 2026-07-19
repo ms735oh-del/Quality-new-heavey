@@ -1,0 +1,6 @@
+{
+  "name": "University Quality Management SaaS",
+  "description": "Enterprise multi-tenant Quality Assurance & Accreditation Management platform for universities and higher-education institutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

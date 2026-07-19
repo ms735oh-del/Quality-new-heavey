@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل إدارة منصة أورا وبوابات الربط - AURA Admin Manual</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        code, pre {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            body {
+                background-color: white !important;
+                color: black !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+
+    <!-- Print Banner / Header (Screen Only) -->
+    <div class="bg-indigo-900 text-white py-4 px-6 shadow-md flex items-center justify-between no-print">
+        <div class="flex items-center gap-3">
+            <span class="text-2xl">👑</span>
+            <div>
+                <h1 class="font-bold text-lg leading-tight">منصة أورا (AURA) - دليل المدير العام ومالك المنصة</h1>
+                <p class="text-xs text-indigo-200">التحكم الكامل، إصدار المفاتيح البرمجية (API)، وإدارة الاشتراكات والنسخ الاحتياطي</p>
+            </div>
+        </div>
+        <button onclick="window.print()" class="bg-white text-indigo-950 hover:bg-indigo-50 font-bold text-xs px-4 py-2 rounded-lg transition shadow-sm cursor-pointer">
+            🖨️ طباعة دليل المدير كـ PDF
+        </button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="max-w-4xl mx-auto my-8 p-8 sm:p-12 bg-white rounded-2xl shadow-xl border border-slate-100 relative">
+        
+        <!-- Watermark / Decorative Top Badge -->
+        <div class="absolute top-6 left-6 text-[10px] text-slate-400 font-bold uppercase tracking-widest border border-slate-200 px-2 py-1 rounded font-mono">
+            Super Admin Control v2.0
+        </div>
+
+        <!-- Cover Header -->
+        <div class="text-center pb-8 border-b-2 border-slate-100 space-y-3">
+            <span class="text-5xl">🛡️</span>
+            <h2 class="text-3xl font-extrabold text-slate-900">دليل التشغيل والتحكم لمدير منصة أورا (AURA)</h2>
+            <p class="text-indigo-700 font-bold text-sm tracking-wide">المرجع التقني والتشغيلي الشامل لإدارة الجامعات، تفعيل واجهات الـ API، وسداد المحافظ اليمنية</p>
+            <div class="flex items-center justify-center gap-2 text-xs text-slate-400 font-mono pt-2">
+                <span>الملف الشخصي المستهدف: lztalaslamqadm@gmail.com</span>
+                <span>•</span>
+                <span>تاريخ الصياغة: يوليو 2026</span>
+            </div>
+        </div>
+
+        <!-- Section 1: Introduction & Isolation -->
+        <section class="py-8 space-y-4">
+            <h3 class="text-xl font-bold text-slate-900 border-r-4 border-indigo-700 pr-3">1. هيكلية عزل البيانات المتعدد (Multi-Tenant Isolation)</h3>
+            <p class="text-sm leading-relaxed text-slate-600">
+                تعمل منصة <strong>أورا (AURA)</strong> على بنية معمارية سحابية متقدمة لعزل بيانات الجامعات منطقياً بالكامل. كل جامعة أو معهد (مثل: <em>مؤسسة أورا لضمان الجودة، جامعة القاهرة الوطنية، معهد أبكس التقني</em>) يمتلك فضاء بيانات معزول تماماً ومحمي بواسطة معرف فريد <code class="bg-slate-100 text-slate-700 px-1 rounded">institutionId</code>.
+            </p>
+            <p class="text-sm leading-relaxed text-slate-600">
+                بصفتك <strong>المدير العام للنظام (Platform Super Admin)</strong>، يمكنك التبديل بين بيئات الجامعات المختلفة من شريط التحكم السفلي في القائمة الجانبية. بمجرد تبديل الجامعة النشطة، يتم تصفية وعزل كافة السجلات اللحظية، مؤشرات الأداء (KPIs)، تقارير التقييم الذاتي، ومخاطر التشغيل فوراً، لضمان أعلى معايير الخصوصية والأمن الرقمي.
+            </p>
+        </section>
+
+        <!-- Section 2: API Management -->
+        <section class="py-8 space-y-4 page-break">
+            <h3 class="text-xl font-bold text-slate-900 border-r-4 border-indigo-700 pr-3">2. إدارة واجهات الاتصال البرمجي (API Gateway) وإصدار المفاتيح للجامعات</h3>
+            <p class="text-sm leading-relaxed text-slate-600">
+                تتيح المنصة للمطورين في الجامعات المشتركة ربط أنظمتهم المحلية وإدارة التعلم (LMS مثل Moodle) أو شؤون الطلاب واستخراج الإحصائيات الفورية لضمان الجودة برمجياً بدون تدخل بشري.
+            </p>
+            <div class="bg-indigo-50 border-r-4 border-indigo-600 p-4 rounded-l-xl my-4 space-y-2">
+                <h4 class="font-bold text-indigo-900 text-xs">🛠️ كيف تقوم بإعطاء جامعة مفتاح الـ API والربط؟</h4>
+                <ol class="list-decimal list-inside text-xs text-indigo-950 space-y-1">
+                    <li>قم بتبديل المؤسسة النشطة من القائمة الجانبية إلى الجامعة المستهدفة (مثلاً: <em>جامعة القاهرة الوطنية</em>).</li>
+                    <li>انتقل إلى تبويب <strong>"بوابة المطورين والربط (REST API Gateway)"</strong> في القائمة الجانبية.</li>
+                    <li>يقوم النظام تلقائياً بتوليد وترخيص مفاتيح الاتصال البرمجي الآمنة الخاصة بهذه الجامعة بالتحديد.</li>
+                    <li>قم بنسخ وتسليم المتغيرات التالية لمهندس الجودة أو المطور التابع للجامعة:</li>
+                </ol>
+            </div>
+
+            <!-- Header variables table -->
+            <div class="overflow-x-auto">
+                <table class="w-full text-right text-xs border-collapse">
+                    <thead>
+                        <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+                            <th class="p-3 font-bold">اسم المتغير في الهيدر (Header Key)</th>
+                            <th class="p-3 font-bold">الوصف التقني والوظيفة</th>
+                            <th class="p-3 font-bold">مثال على التنسيق</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 text-slate-600">
+                        <tr>
+                            <td class="p-3 font-mono text-indigo-600 font-bold">x-api-key</td>
+                            <td class="p-3">مفتاح الاتصال الفريد بالجامعة للتحقق الفوري من الهوية والترخيص.</td>
+                            <td class="p-3 font-mono">aura_live_cairo_pk_1b2c...</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-mono text-indigo-600 font-bold">Authorization</td>
+                            <td class="p-3">توكن مشفر وموقع رقمياً بنظام JWT يحمل معايير وصلاحيات المؤسسة.</td>
+                            <td class="p-3 font-mono">Bearer eyJhbGciOiJIUzI1Ni...</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-mono text-indigo-600 font-bold">x-institution-id</td>
+                            <td class="p-3">المعرف الرقمي للمؤسسة لضمان عزل البيانات وعدم الخلط بين الكيانات.</td>
+                            <td class="p-3 font-mono">cairo-national</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="p-4 bg-amber-50 border border-amber-200 rounded-xl space-y-2 mt-4 text-xs">
+                <p class="font-bold text-amber-900">🛡️ نظام حماية عزل البيانات واكتشاف الهجمات المكتشفة:</p>
+                <p class="text-amber-800 leading-relaxed">
+                    تحتوي بوابة الـ API على ميزة تجريبية تسمى <strong>"محاكاة اختراق البيانات (Simulate Attack)"</strong>. عندما ينقر المطور عليها، يتم حقن معرف مؤسسة خاطئ أو مفتاح لا يتطابق مع النطاق الفعلي. تعترض المنصة هذا المطلب فوراً وترد بكود الحظر الفوري <code class="bg-amber-100 text-amber-900 px-1 rounded">401 Unauthorized</code> مما يثبت خلو المنصة من ثغرات تسريب البيانات المشتركة.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3: Yemen Mobile Wallet -->
+        <section class="py-8 space-y-4 page-break">
+            <h3 class="text-xl font-bold text-slate-900 border-r-4 border-indigo-700 pr-3">3. تفعيل وإدارة مدفوعات المحافظ الإلكترونية اليمنية (جوالي وجيب)</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+                تعتمد المنصة كلياً على تسيير الاشتراكات الشهرية والتجارية للجامعات عبر دمج بوابات الدفع المحلية الأكثر انتشاراً في اليمن: <strong>محفظة جوالي (Jawali Wallet)</strong> و<strong>محفظة جيب (Jeeb Wallet)</strong>.
+            </p>
+
+            <div class="space-y-4 pt-2 text-xs">
+                <div class="p-5 bg-slate-900 text-slate-200 rounded-xl space-y-3 font-mono">
+                    <span class="text-emerald-400 font-bold block">⚙️ كيفية ربط أرقام حساباتك وتعديلها:</span>
+                    <p class="text-slate-400">يمكنك الذهاب إلى لوحة إدارة النظام (Super Admin) وتغيير المتغيرات السحابية أو ملف البيئة:</p>
+                    <div class="pl-4 border-l-2 border-slate-700 space-y-1">
+                        <div><span class="text-slate-500"># رقم حساب تاجر جوالي لاستقبال التحويلات:</span> JAWALI_WALLET_NUMBER="770001234"</div>
+                        <div><span class="text-slate-500"># معرف التاجر المعتمد برمجياً للربط:</span> JAWALI_MERCHANT_ID="MERCH-JAW-9988"</div>
+                        <div><span class="text-slate-500"># رقم حساب تاجر جيب لاستقبال التحويلات:</span> JEEB_WALLET_NUMBER="780005678"</div>
+                        <div><span class="text-slate-500"># معرف التاجر المعتمد في جيب:</span> JEEB_MERCHANT_ID="MERCH-JEE-5544"</div>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+                    <h4 class="font-bold text-slate-900">🔄 دورة الموافقة وتفعيل خطة الاشتراك للجامعة:</h4>
+                    <ul class="list-disc list-inside space-y-1 text-slate-600">
+                        <li>عندما تقوم جامعة بالترقية إلى باقة جديدة، يعرض لها النظام معلومات حسابك المحفوظة ويطلب منها إدخال "رقم الحوالة" وصورة إثبات التحويل.</li>
+                        <li>تصلك المعاملة مباشرة في قائمة <strong>"طلبات سداد الاشتراكات المعلقة"</strong> بلوحة التحكم الخاصة بك.</li>
+                        <li>يمكنك فحص الصورة والتحقق من حسابك في الهاتف، ثم النقر فوق <strong>"موافقة (Approve)"</strong> لتفعيل ميزات الـ API والـ AI وتوسيع حدود الاستيعاب تلقائياً للجامعة، أو <strong>"رفض"</strong> لإرجاع الطلب.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Backup & Restore -->
+        <section class="py-8 space-y-4 page-break">
+            <h3 class="text-xl font-bold text-slate-900 border-r-4 border-indigo-700 pr-3">4. النسخ الاحتياطي التام والتحقق من سجل الأمان (System Backups & Logs)</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+                توفر المنصة أدوات متكاملة تضمن حماية النظام من أي فقدان طارئ للمعلومات ومراقبة الأحداث الأمنية في الوقت الفعلي:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                <div class="p-4 bg-slate-50 border border-slate-100 rounded-xl">
+                    <h4 class="font-bold text-slate-900 mb-2">💾 نظام النسخ والتشغيل الفوري (PITR)</h4>
+                    <p class="text-slate-500 leading-relaxed">بضغطة زر واحدة من لوحة التحكم، يمكنك أخذ لقطة مرآوية (Snapshot) كاملة لقواعد بيانات المنصة بكافة مستخدميها وجامعاتها وتفاصيل استبياناتها الفعالة. وفي حال رغبت في التراجع عن أي تعديل، انقر فوق "استعادة" ليعود النظام للحالة السابقة فوراً وبلا توقف.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border border-slate-100 rounded-xl">
+                    <h4 class="font-bold text-slate-900 mb-2">🌐 تدقيق خادم الأمان وسجل الـ IP</h4>
+                    <p class="text-slate-500 leading-relaxed">يتتبع هذا السجل منخفض المستوى كافة العمليات المجرية على الخادم بالكامل، حيث يعرض التوقيت الدقيق، وعنوان الـ IP للعميل الذي قام بالحركة، والمؤسسة والمسار المطلوب، لمنع أي تجاوزات وضمان تتبع الثقة الأمنية للمعلومات.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Runbooks -->
+        <section class="py-8 space-y-4 page-break">
+            <h3 class="text-xl font-bold text-slate-900 border-r-4 border-indigo-700 pr-3">5. خطوات تصفير البيانات وبدء التشغيل الفعلي (Production Deployment)</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+                لقد قمنا برمجياً <strong>بتطهير وتفريغ النظام بالكامل من أي سجلات تجريبية أو حملات وهمية</strong> ليكون جاهزاً للتشغيل الحقيقي فوراً. إليك دليل البدء السريع:
+            </p>
+            <ol class="list-decimal list-inside space-y-3 text-sm text-slate-600 leading-relaxed pr-2">
+                <li>
+                    <strong>الولوج بأمان:</strong> سجل الدخول بالبريد المعتمد <code class="bg-indigo-50 text-indigo-700 px-1 rounded font-mono">lztalaslamqadm@gmail.com</code> (حساب مدير المنصة الرئيسي).
+                </li>
+                <li>
+                    <strong>إنشاء وإدارة الجامعات الحقيقية:</strong> من لوحة الـ Super Admin، يمكنك تهيئة الكيانات الأكاديمية وصلاحيات المنسقين. الكليات والأقسام ستظهر فارغة بانتظار إدخال العمداء للمقررات والطلاب الفعليين.
+                </li>
+                <li>
+                    <strong>إصدار وتوزيع مفاتيح الـ API:</strong> بمجرد دفع الجامعة للاشتراك والموافقة عليه، اذهب لبوابة الـ API وانسخ لهم مفاتيح الربط لبناء التوصيلات الرقمية والتدقيق بالذكاء الاصطناعي مع نماذج Gemini السحابية بخصوصية مطلقة.
+                </li>
+            </ol>
+        </section>
+
+        <!-- Signature Footer -->
+        <div class="mt-12 pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+            <span>حقوق الطبع محفوظة © منصة أورا لضمان الجودة الأكاديمية 2026</span>
+            <span class="font-mono text-slate-300">CONFIDENTIAL | SUPER ADMIN USE ONLY</span>
+        </div>
+
+    </div>
+
+    <!-- Instructions Banner Screen Only -->
+    <div class="max-w-4xl mx-auto my-4 p-4 bg-amber-50 rounded-xl border border-amber-200 text-amber-800 text-xs text-center leading-relaxed no-print">
+        💡 <strong>تلميح للطباعة:</strong> عند النقر فوق زر "طباعة دليل المدير كـ PDF"، سيقوم المتصفح تلقائياً بإنشاء ملف PDF ممتزجاً بالتصميم الأنيق والفواصل الدقيقة بدون ظهور شريط التصفح الخارجي.
+    </div>
+
+</body>
+</html>
